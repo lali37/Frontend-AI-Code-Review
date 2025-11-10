@@ -1,0 +1,71 @@
+*{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height:100%;
+  width:100%;
+}
+
+main{
+  height:100%;
+  width:100%;
+  padding:1.5rem;
+  display:flex;
+  gap: 0.6rem;
+}
+
+main .left , main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  border: 0.2rem solid rgb(168, 168, 255);
+  
+}
+
+main .left{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  color: white;
+}
+
+.left .code, .code pre, .code pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+}
+
+main .left .review{
+  position:absolute;
+  bottom:1rem;
+  right:1rem;
+  background-color: rgb(168, 168, 255);
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+main .left .review:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease;  
+}
+
+main .left .review:active{
+  transform: translateY(4px);
+}
+
+main .right{
+  background-color: rgb(47, 47, 47);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+  color: white;
+}
