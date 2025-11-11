@@ -21,7 +21,7 @@ const [review, setReview ]=useState(``)
   }, [])
 
   async function reviewcode(){
-    const response = await axios.post('https://backend-ai-code-review.vercel.app/ai/get-review', { code })
+     const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/ai/get-review`, { code });
 
 
     setReview(response.data)
